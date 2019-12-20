@@ -11,13 +11,13 @@ from utils import compute_gt_gradient, make_canvas_mask, numpy2tensor, laplacian
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--source_file', type=str, default='data/1_source.png', help='path to the source image')
-parser.add_argument('--mask_file', type=str, default='data/1_mask.png', help='path to the mask image')
-parser.add_argument('--target_file', type=str, default='data/1_target.png', help='path to the target image')
-parser.add_argument('--ss', type=int, default=300, help='source image size')
-parser.add_argument('--ts', type=int, default=512, help='target image size')
-parser.add_argument('--x', type=int, default=200, help='vertical location')
-parser.add_argument('--y', type=int, default=235, help='vertical location')
+parser.add_argument('--source_file', type=str, default='data/0_source.png', help='path to the source image')
+parser.add_argument('--mask_file', type=str, default='data/0_mask.png', help='path to the mask image')
+parser.add_argument('--target_file', type=str, default='data/0_target.png', help='path to the target image')
+parser.add_argument('--ss', type=int, default=3024, help='source image size')
+parser.add_argument('--ts', type=int, default=4024, help='target image size')
+parser.add_argument('--x', type=int, default=1512, help='vertical location')
+parser.add_argument('--y', type=int, default=2012, help='vertical location')
 parser.add_argument('--gpu_id', type=int, default=0, help='GPU ID')
 parser.add_argument('--num_steps', type=int, default=1000, help='Number of iterations in each pass')
 
